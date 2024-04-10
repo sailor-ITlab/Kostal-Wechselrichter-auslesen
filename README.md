@@ -1,0 +1,1 @@
+# Kostal-Wechselrichter-auslesen
