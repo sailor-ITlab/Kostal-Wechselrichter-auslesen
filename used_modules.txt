@@ -1,0 +1,5 @@
+flask: latest, (tested Version: 3.0.0)
+flask-cors:latest, (tested Version: 4.0.0a0)
+selenium: latest, (tested Version: 4.8.2)
+pymodbus: 2.5.3, (tested Version: 2.5.3)
+waitress:latest, (tested Version: 2.1.2)
