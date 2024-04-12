@@ -53,7 +53,7 @@ class API():
         Obj_Solar = Solar()
 
         app = Flask(__name__)
-        CORS(app, origins=['http://api.dev.local:*', 'https://api.dev.local:*', 'http://127.0.0.1:*', 'http://localhost:*'], supports_credentials=True)
+        CORS(app, origins=['http://api.local:*', 'https://api.local:*', 'http://127.0.0.1:*', 'http://localhost:*'], supports_credentials=True)
         # CORS(app, origins=['*']) # Nur für Entwicklung verwenden, nicht für Produktion
 
         @app.route('/')
@@ -127,9 +127,6 @@ class API():
                 'Hausverbrauch': float(Wechselr_Keller_Werte[1][36][4] + Wechselr_Keller_Werte[1][37][4] + Wechselr_Keller_Werte[1][38][4] + Wechselr_Gartenhaus_Werte[1][3][3] + Wechselr_Keller_Werte[1][23][4] * Wechselr_Keller_Werte[1][25][4])
             }
             return jsonify(data), 200
-
-
-
 
         # app.run(debug=False, host='0.0.0.0', port=8001)
         print("starting API")

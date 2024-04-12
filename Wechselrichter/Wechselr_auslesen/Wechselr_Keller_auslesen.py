@@ -6,9 +6,9 @@ from pymodbus.payload import BinaryPayloadDecoder
 
 class Wechselr_Keller():
     def __init__(self):
-        # Programm orientiert an Copyright (C) 2018  Kilian Knoll
+        # Programm orientiert an https://github.com/kilianknoll/kostal-modbusquery/
         # Bechreibung zum auslesen und welche ID was ist unter:
-        #       https://www.kostal-solar-electric.com/de-de/download/download/#Solar-Wechselrichter/PLENTICORE%20plus/Deutschland/Schnittstellen%20Protokolle/Schnitstellen Protokolle
+        # https://www.kostal-solar-electric.com/de-de/download/download/#Solar-Wechselrichter/PLENTICORE%20plus/Deutschland/Schnittstellen%20Protokolle/Schnitstellen Protokolle
 
         self.IP_Wechselrichter_Keller = '172.16.10.37'
         self.Port_Wechselrichter_Keller = '1502'

@@ -4,7 +4,6 @@ from selenium.webdriver.common.by import By
 import datetime
 import time
 
-
 class Wechselr_Gartenhaus:
     def __init__(self):
         # Set up Firefox options
